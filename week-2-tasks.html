@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A layout example that shows off a responsive product landing page.">
+    <title>MAD A Week 2</title>
+	<meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A layout example that shows off a responsive product landing page.">
+    <title>Index</title>
+    <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
+	<link rel="stylesheet" href="mystyle5.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css"
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.column.left {
+width: 50%;
+}
+
+.column.right {
+width: 50%;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.left, .column.right {
+    width: 100%;
+  }
+ }
+ </style>
+</head>
+
+
+<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<!---NAVBAR--->
+
+<div class="header">
+    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+        <a class="pure-menu-heading" href=""><b>Pixelated Perspectives</b></a>
+
+        <a class="pure-menu-list">
+            <li class="pure-menu-item pure-menu-selected"><a class="active" href="index.html" class="pure-menu-link">Home</a></li>
+        </a>
+    </div>
+</div>
+
+<!---HEADER--->
+
+<div class="splash-container1">
+    <div class="splash">
+        <h1 class="splash-head">Week 2</h1>
+        <p class="splash-subhead">
+            Gaming in Humanities Education
+        </p>
+		 <p>
+		<div id="button">
+           <a href="#iltasks" class="pure-button pure-button-primary">IL Tasks</a>
+        </p>
+		</div>
+		 <p>
+		<div id="button">
+           <a href="#labtasks" class="pure-button pure-button-primary">Lab Tasks</a>
+        </p>
+		</div>
+    </div>
+</div>
+<!--CONTENT-->
+
+<div class="content-wrapper">
+    <div class="content" id="iltasks">
+        <h2 class="content-head is-center">IL Tasks</h2>
+        <div class="pure-g">
+         <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+
+                <h3 class="content-subhead">
+
+		Task 1: Identifying an Audience
+		</h3>
+		<p>
+		<ul>
+		<li><i>Is there a particular audience?</li></i>
+		<dd>- I have chosen my audience to be teachers/educators who are searching for ways to implement gaming into their teaching methods. It might also be parents who are looking for resources for children at home/over holidays etc.
+		</dd>
+		<li><i>Is it broad or narrow?</li></i>
+		<dd>- My audience is narrow in terms of who it is, but could be broad in terms of their demographics.
+		</dd>
+		<li><i>Do they have pre-existing expecations?</li></i>
+		<dd>- It is likely that the audience will already have some type of knowledge on this topic, however their understandiny could vary. For example, I think the audience will be aware of the positives of digital gaming but may not know why and how games are beneficial, or how to get the most out of them for students.
+		</dd>
+		<li><i>What types of audience do I have available?</li></i>
+		<dd>- I have friends who are newly graduated primary school teachers, and I have my classmates in my labs which can look over and test my website.</dd>
+		</ul>
+		</div>
+		</div>
+		
+		<div class="tablewk2">
+		<table style="width:100%">
+			<tr>
+				<th>Audience Characteristic</th>
+				<th>Rationale</th>
+			</tr>
+			<tr>
+				<td>Age</td>
+				<td>Writing for adults, however there could be a wide age range from around 18/19 to early 60's. Looking at age statistics of teachers from the Scottish Government, the mean age is 40.</td>
+			</tr>
+			<tr>
+				<td>Gender</td>
+				<td>Looking at statistics, teaching is a female dominated profession, however I will need to make sure my writing is not just aimed at females.</td>
+			</tr>
+			<tr>
+				<td>Language Proficiency</td>
+				<td>Excellent level of English.</td>
+			</tr>
+			<tr>
+				<td>Education Level</td>
+				<td>My audience will either be in the middle of completing their university degree, or will have completed it, so I can assume that they have a good level of education behind them.</td>
+			</tr>
+			<tr>
+				<td>Attitude towards writer</td>
+				<td>From my research, I think that younger audiences will not be as skeptical, howver older ones will be. I plan to write in a welcoming and accomodating fashion.</td>
+			</tr>
+			<tr>
+				<td>Knowledge of topic</td>
+				<td>I can assume that the audience have some knowledge of the topic due to the Scottish Governemnts strategies to implement digital technologies in education. I also plan to interview contacts I have who are newly graduated primary school teachers in Scotland for their knowledge on the topic.</td>
+			</tr>
+			<tr>
+				<td>Audience Action</td>
+				<td>I want the audience to want to implement digital gaming into their teaching method. I want them not to be afraid of doing this and to understand how beneficial it would be to them in the classroom.</td>
+			</tr>
+		</table>
+		</div>
+		
+		<div class="pure-g">
+		<h3 class="content-subhead">
+		Task 2: Audience Personas
+		</h3>
+			<div class="row">
+			<div class="column right">
+			<i>'Sophie the Newbie'</i><br>
+				Type: Newly graduated, just completed probationary year of teaching<br>
+			<ul>
+			<li><b>Attributes</b></li>
+				<dd>- Up to date and taught the newest teaching methods</dd>
+				<dd>- May be reluctant to seek help as still beginning, however may make them more interested in taking courses</dd>
+				<dd>- Depends mostly on own knowledge/Google for help</dd>
+				<dd>- Tech Savvy</dd>
+			<li><b>Goals/Motivations</li></b>
+				<dd>- Wants to continue employement- difficult in current climate of teaching</dd>
+				<dd>- Likes lists, organisation</dd>
+			<li><b>Frustrations</b></li>
+				<dd>- Struggle with teaching employment</dd>
+				<dd>- Feels a bit lost in terms of research</dd>
+			</ul>
+			</div>
+			
+			<div class="column left">
+			<i>'Tina the Teacher'</i><br>
+			Type: 55 year old teacher, only career, married with teenage children<br>
+			<ul>
+			<li><b>Attributes</b></li>
+				<dd>- Has a heath of expierence, professionally and personally, that can be useful for colleagues and students</dd>
+				<dd>- Respected by colleagues - may have colleagues they once taught or parents of studnets</dd>
+				<dd>- Has a busy personal life with family and teaching</dd>
+				<dd>- Has 'own' system for doing things as they are confident in their roles</dd>
+			<li><b>Frustrations</b></li>
+				<dd>- May be stuck in same ways of teaching, not open to new methods due to experience</dd>
+				<dd>- Could be technologically challeneged and be not confident with it</dd>
+			<li><b>Goals/Motivations</b></li>
+				<dd>- Well respected and prides themselves as being confident in their practice</dd>
+			</ul>
+			</div>
+			
+		<p>I came to these conclusions using the following resources:</p>
+		
+		<ul>
+			<li>
+			<a href="https://teachertaskforce.org/blog/young-teachers-are-future-profession">Teacher Task Force</a></li>
+			<li>
+			<a href="https://www.researchgate.net/publication/282598698_Old_Teachers_Old_Ideas_and_the_Effect_of_Population_Aging_on_Economic_Growth">ResearchGate</a></li>
+			</ul>
+			</div>
+			
+		<div class="pure-g">
+		<h3 class="content-subhead">
+		Task 3: User Stories
+		</h3>
+		<ul>
+			<li>My websites user story is 'as a teacher, I want to be up to date and innovative in my teaching methods, in order to improve student engagement'.</li>
+			<li>The users goal from researching this is that they are interested and want to implement new things into their teaching methods.</li>
+			<li>Acceptance Criteria</li>
+				<dd>- 'it's done when the user is informed of why digital game led learning can improve student engagement'</dd>
+				<dd>- 'it's done when the user knows the methods in which they can implement digital games into their learning methods'</dd>
+				<dd>- 'it's done when the user is aware of areas where digital video games are beneficial and have worked in the past e.g. through cultural heritage'</dd>
+		</ul>
+		</div>
+	
+    <div class="ribbon l-box-lrg pure-g">
+        <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
+        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
+
+            <h2 class="content-head content-head-ribbon">Did you know...
+			</h2>
+            <p>
+                Scotland's first fully immersive classroom was created in 2021, allowing pupils to step on a World War 1 battlefield, safari trips and more (BT Newsroom, 2021)
+            </p>
+			</div>
+			</div>
+			</div>
+			
+    <!--LAB TASKS-->
+<section id="labtasks">
+
+        <h2 class="content-head is-center">Lab Tasks</h2>
+		<div class="pure-g">
+		</div>
+		
+		<div class="pure-g">
+		<h3 class="content-subhead">
+		Task 1
+		</h3>
+		</div>
+	
+		<p> I chose to compare the Yale School of Art and the Design Museums websites, in terms of design thinking.</p>
+		<h4>Design Museum</h4>
+		<ul>
+			<li>In terms of the audience, the Design Museum have clearly developed a website that is created for their audience. It would be appropriate to assume that the website is aimed at first time or regular visitors, as the homepage says 'Welcome to the Design Museum', and gives the option to visit, become a member, donate or to visit the online shop. The design is sleek, and is in line with those who would likely be interested in the Design Museum.</li>
+			<li>The purpose of the website is clearly to alert visitors of the site to 'What is on'. It is a very simple to use website, with a drop down menu of all the areas you can navigate to. The search bar however is not available on the home page and you need to scroll to the bottom when you click menu, which could be frustrating for users who are looking for something specific in a rush.</li>
+			<li>When you click one of the options e.g. ‘Plan your visit’, the title is at the top of the page so you know where you are. From there, you can either go back to ‘Home’, or click the drop down menu once again but it does not show where you currently are when you click the drop down menu so users have the possibility to click where they are again.</li>
+			<li>For the most part, it is stagnant images on the website. I like how for the background on some pages they have a full-length photo that stays still, and when you scroll the text moves while the image stays the same. This makes the text stand out sufficiently. I feel like it makes the using of the website a sleek experience, as although images and colours may change there is still a level of consistency over each section.</li>
+			<li>For those that are not regular visitors or are vsiting for the first time it is easy to navigate and it has a good amount of content that would be relevant. For people who are regular visitors, the content is still good however they may want a more personalised experience, however they can get this from being a member of the museum</li>
+		</ul>
+		<h4>Yale School of Art</h4>
+		<ul>
+			<li>In terms of audience, it is not very clear if the Yale School of Art is acccurately aimed at its audience. On one hand, the wiki aspect of the website would suggest it was aimed at students as there is the feature of collaboration, however there is information regarding events and such that are not solely aimed at students, and the design of the website might not be appealing to the average person. </li>
+			<li>The animation and changing colours of the website is very jarring to a user. Although this may be appealing to students or prospective students, as the collaboration aspect is in line with an art school, it is difficult to navigate and actually want to read. There is an option however to 'turn off' the animations.</li>
+			<li>There is a lack of consistency over the entire website. Each section can be similar but also entirely different - this can make it difficult for a user to navigate and acrually make use of the site.</li>
+			<li>It has a good depth of material that is appropriate for the audience, with different sections that are only for students vs sections for visitors. It does have a good, clear calendar that details events.</li>
+		</ul>
+		<h4>Reflection on Task</h4>
+			<p>I found this task very useful, as learning about design principles and being able to apply them to websites has been useful in getting me thinking about my own web design. Particularly the Design Museums website creator, Fabrique has been a great resource for me to look at as they have all of the digital designs they have created linked on their site. Overall, looking deeper into the design of a website has been interesting as there are multiple factors that I had never considered before, but now would.</p>
+		</div>
+		
+		
+		<div class="pure-g">
+		<h3 class="content-subhead">
+		Task 2: Designing for my Audience
+		</h3>
+		
+		<p>From comparing these two websites, I am able to think about what my audience would prefer. As my audience are professionals, my website is going to more similar to the Design Museum. As it was informative with a sleek design, but not being too overwhelming for the user. I am going to take aspects of it when considering my design.
+		</p>
+		</div>
+		
+		<div class="pure-g">
+		<h3 class="content-subhead">
+		Task 3: Moodboard
+		</h3>
+		
+		<p>The lab task in week 2 was to create a moodboard relating to our topic. I have included a screengrab of my moodboard so far, I am looking forward to updating it throughout the term. I have chosen to use Canva to create my moodboard as it is easy for me to access and use on my laptop and iPad.</p>
+		
+		<img class="pure-img-responsive" src="master-files/screenshot002-moodboard.jpg" alt="moodboard" style="width:200px;height:333px;">
+		</div>
+		</div>
+	
+	
+
+</body>
+</html>
